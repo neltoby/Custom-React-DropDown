@@ -326,6 +326,7 @@ const DisplayedList = (props: listType) => {
                 checked={item.value === currentSelected.value}
                 className={cs.radio}
                 type="radio"
+                readOnly
               />
             )}
             {item.name}
