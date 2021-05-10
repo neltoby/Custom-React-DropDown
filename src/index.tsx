@@ -5,6 +5,38 @@ import { DropDown } from "./components/dropdown";
 const arr = [
   {
     name: "white",
+    value: "#fff277"
+  },
+  {
+    name: "black",
+    value: "#000321"
+  },
+  {
+    name: "yellow",
+    value: "#ffff098"
+  },
+  {
+    name: "dark",
+    value: "#00000wew"
+  },
+  {
+    name: "oral",
+    value: "#fffghr22"
+  },
+  {
+    name: "orange",
+    value: "#00054333"
+  },
+  {
+    name: "pink",
+    value: "#fff78355"
+  },
+  {
+    name: "brown",
+    value: "#000ghe33"
+  },
+  {
+    name: "white",
     value: "#fff"
   },
   {
@@ -46,7 +78,7 @@ render(
     fontColor="black"
     hoverColor="green"
     placeholder="Select an option"
-    variant="filled"
+    variant="standard"
   />,
   rootElement
 );
