@@ -442,15 +442,15 @@ export const DropDown: FunctionComponent<DropDownProp> = (props) => {
     setOpen(false);
   };
 
+  const toggleDropdown = () => {
+    setOpen(!open);
+  };
+
   const onClick = (item: option) => {
     setInputNameBackdrop("");
     setCurrentSelected(item);
     setInputName(item.name);
     onChange(item.value);
-  };
-
-  const toggleDropdown = () => {
-    setOpen(!open);
   };
 
   useEffect(() => {
@@ -460,7 +460,6 @@ export const DropDown: FunctionComponent<DropDownProp> = (props) => {
   useEffect(() => {
     if (!inputNameBackdrop) {
       alignOptions();
-      setOpen(true);
     }
   }, [inputNameBackdrop]);
 
